@@ -23,12 +23,12 @@ public class Main {
         }
         //Задача5
         System.out.println("Задача5");
-        for (int i = 1904; i <= 2096; i = i + 4) {
-            System.out.println(i + " год является високосным.");
+        for (int year = 1904; year <= 2096; year = year + 4) {
+            System.out.println(year + " год является високосным.");
         }
         //Задача6
         System.out.println("Задача6");
-        for (int i = 7; i <= 77; i = i + 7) {
+        for (int i = 7; i <= 98; i = i + 7) {
             System.out.println(i);
         }
         //Задача7
@@ -38,16 +38,16 @@ public class Main {
         }
         //Задача8
         System.out.println("Задача8");
-        int amountContributionMonth = 29000;
-        int depositAmount = 0;
+        double contributionMonth = 29000;
+        double amountAccumulation = 0;
         for (int month = 1; month <= 12; month++) {
-            depositAmount = depositAmount + amountContributionMonth;
-            System.out.println("Месяц " + month + ", сумма накоплений равна " + depositAmount + " рублей.");
+            amountAccumulation = amountAccumulation + contributionMonth;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + amountAccumulation + " рублей.");
         }
         //Задача9
         System.out.println("Задача9");
-        double contributionMonth = 29000;
-        double amountAccumulation = 0;
+        contributionMonth = 29000;
+        amountAccumulation = 0;
         int percentageMonth = 1;
         for (int month = 1; month <= 12; month++) {
             amountAccumulation = (amountAccumulation + contributionMonth) + (amountAccumulation + contributionMonth) / 100 * percentageMonth;
@@ -55,10 +55,9 @@ public class Main {
         }
         //Задача10
         System.out.println("Задача10");
+        int multiplicationTableTwo = 2;
         for (int i = 1; i <= 10; i++) {
-            int multiplicationTableTwo = 2;
-            multiplicationTableTwo = multiplicationTableTwo * i;
-            System.out.println(multiplicationTableTwo);
+            System.out.println(multiplicationTableTwo*i);
         }
     }
 }
